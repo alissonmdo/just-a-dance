@@ -1,4 +1,4 @@
-@import "./reset";
+@import './reset';
 
 * {
   box-sizing: border-box;
@@ -14,16 +14,14 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(
-      100vw at 81.2% 86.04%,
-      #ffa571 0%,
-      #963011 100%
-    )
+  background: radial-gradient(90vh at 50% 19.04%, #fce655 0%, #f2486a 100%)
     no-repeat;
+  // background: radial-gradient(100vw at 81.2% 86.04%, #ffa571 0%, #963011 100%)
+  // no-repeat;
   height: 100vh;
 }
 
-.app {
+.app-container {
   display: grid;
   grid-template-columns: 20px 1fr 20px;
   > * {
@@ -33,52 +31,72 @@ body {
     grid-column: 1 / -1;
   }
   .app-title {
-    text-align: center;
-    font-size: 3em;
-    text-transform: uppercase;
-    font-weight: bolder;
+    display: none;
   }
 }
 
-.card {
-  min-width: 300px;
-  max-width: 300px;
-  border-radius: 5px;
-  overflow: hidden;
+.app-logo {
 }
-.card-image {
-  width: 100%;
-}
-.card-color-pink {
-  background-color: rgba(136, 13, 109, 1) !important;
-  color: white;
-}
-.card-details {
-  font-weight: bold;
-  padding: 10px;
-  .card-title {
-    text-transform: uppercase;
-    font-size: 1.2em;
-    padding-bottom: 5px;
-  }
+
+.app-dev {
+  justify-self: center;
+  vertical-align: bottom;
+  align-self: flex-end;
 }
 
 .carousel {
+  // display: grid;
+  // grid-gap: 10px;
+  // grid-template-columns: 10px;
+  // grid-auto-flow: column;
+  // grid-auto-columns: 300px;
 
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 10px;
-  grid-auto-flow: column;
-  grid-auto-columns: 300px;
+  // overflow-x: scroll;
 
-  overflow-x: scroll;
-
-  scroll-snap-type: x proximity;
-  padding-bottom: calc(0.75 * var(--gutter));
-  margin-bottom: calc(-0.25 * var(--gutter));
+  // scroll-snap-type: x proximity;
+  // padding-bottom: calc(0.75 * var(--gutter));
+  // margin-bottom: calc(-0.25 * var(--gutter));
+  // &:before,
+  // &:after {
+  //   content: '';
+  //   width: 10px;
+  // }
 }
-.carousel:before,
-.carousel:after {
-  content: "";
-  width: 10px;
+
+.player {
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px black;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(24, 0, 80, 0.473);
+  transition: 1ms;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.blur {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px);
 }

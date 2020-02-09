@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/just-a-dance/static/css/main.00662407.chunk.css",
+    "main.js": "/just-a-dance/static/js/main.c230ecbf.chunk.js",
+    "main.js.map": "/just-a-dance/static/js/main.c230ecbf.chunk.js.map",
+    "runtime-main.js": "/just-a-dance/static/js/runtime-main.ebe79e7a.js",
+    "runtime-main.js.map": "/just-a-dance/static/js/runtime-main.ebe79e7a.js.map",
+    "static/js/2.ddd06a4b.chunk.js": "/just-a-dance/static/js/2.ddd06a4b.chunk.js",
+    "static/js/2.ddd06a4b.chunk.js.map": "/just-a-dance/static/js/2.ddd06a4b.chunk.js.map",
+    "index.html": "/just-a-dance/index.html",
+    "precache-manifest.83a5bc9f8e0783a4b2eeb494eae533c7.js": "/just-a-dance/precache-manifest.83a5bc9f8e0783a4b2eeb494eae533c7.js",
+    "service-worker.js": "/just-a-dance/service-worker.js",
+    "static/css/main.00662407.chunk.css.map": "/just-a-dance/static/css/main.00662407.chunk.css.map",
+    "static/js/2.ddd06a4b.chunk.js.LICENSE.txt": "/just-a-dance/static/js/2.ddd06a4b.chunk.js.LICENSE.txt",
+    "static/media/just-a-dance-logo.svg": "/just-a-dance/static/media/just-a-dance-logo.f15bd300.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebe79e7a.js",
+    "static/js/2.ddd06a4b.chunk.js",
+    "static/css/main.00662407.chunk.css",
+    "static/js/main.c230ecbf.chunk.js"
+  ]
+}
